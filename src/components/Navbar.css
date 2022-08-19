@@ -1,0 +1,45 @@
+.navbar{
+    background-color:rgb(71, 17, 158);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    height: 10vh;
+}
+.nav-logo{
+    color: #fff;
+    margin-left: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.nav-links{
+    color: rgb(231, 230, 238);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+.logo{
+    width: 100px;
+    height: 70px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.nav-links:hover{
+    background-color: rgb(64, 207, 212);
+    border-radius: 4px;
+    transition: all .2s easw-in;
+}
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-gap: 10px ;
+    text-align: center;
+    width: 80vw;
+    list-style: none;
+    justify-content: end;
+}
+.menu-icon{
+    display: none;
+}
