@@ -1,0 +1,39 @@
+.contact__heade{
+    width: 100vh;
+    height: calc(100vh -3rem);
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+}
+.contact__header-container{
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+    gap: 6rem;
+}
+.contact__header-left{
+    margin-top: -3rem;
+}
+/*.main__header-left h4{
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color:rgb(194, 17, 179);
+}*/
+.contact__header-left h1{
+    color: rgb(107, 32, 151);
+}
+.contact__header-left p{
+    margin: 1rem 0 3.5rem;
+    font-size: 1.1rem;
+    color: rgb(29, 27, 28);
+    font-weight: 400;
+}
+.contact__header-right{
+    display: grid;
+    
+    position: relative;
+    
+    
+}
