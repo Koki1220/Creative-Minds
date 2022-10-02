@@ -123,16 +123,16 @@ section{
     border-radius: 0 3rem 0 3rem;
     transition: var(--transition);
 }
-.card:hover{
+/*.card:hover{
     background: transparent;
     background-color: var(--color-gray-400);
     cursor: default;
-}
+}*/
 .card span{
     width: 3rem;
     height: 3rem;
-    background: rgb(216, 54, 203);
-    color: var(--color-gray-100);
+    background: rgb(11, 13, 134);
+    color:goldenrod;
     font-size: 1.5rem;
     padding: 0.8rem;
     display: grid;
@@ -140,15 +140,12 @@ section{
     margin-bottom: 1.5rem;
     margin-inline: auto;
     border-radius: 1rem;
-    transition: var(--transition);
+    
 }
-.card span:hover {
-    background: rgb(54, 57, 216);
-    color: var(--color-gray-100);
 
-}
 .card h4{
-    color: #FFF;
+    color: rgb(90, 16, 74);
+    font-weight: 800;
 }
 
 .card small{
@@ -156,7 +153,7 @@ section{
     display: block;
     justify-content: left;
     font-weight: 600;
-    color: rgb(196, 190, 190);
+    color:#FFF;
 }
 
 

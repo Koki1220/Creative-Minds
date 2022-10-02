@@ -31,13 +31,13 @@ const Navbar = () => {
                         <Link to='about'spy={true} smooth={true} offset={-150} duration={500}  onClick={closeMenu}>About Us</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='service' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Services</Link>
+                        <Link to='service' spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>Services</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='solution' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Solution</Link>
+                        <Link to='solution' spy={true} smooth={true} offset={-155} duration={500} onClick={closeMenu}>Solution</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='contact' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Contact Us</Link>
+                        <Link to='contact' spy={true} smooth={true} offset={-155} duration={500} onClick={closeMenu}>Contact Us</Link>
                     </li>
                 </ul>
             </nav>

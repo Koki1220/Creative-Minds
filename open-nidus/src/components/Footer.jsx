@@ -10,8 +10,8 @@ const Footer = () => {
                 <Link to="/" className='logo'>
                     <img src={Logo} alt='Footer Logo'/>
                 </Link>
-                <p>We help Start-ups and Enterprises build intelligent, data-driven and scalable applications by leveraging 
-                the power of Artificial Intelligence - Machine Learning, Data and Cloud.</p>
+                <p>Nidus ERPis give you the best company to satisfy your project in the good manner.
+                    We are flexible with the custom design as per the customer needs.</p>
                 <div className='footer__socials'>
                     <a href='https://linkedin.com' target="_blank" rel='noreferrer noopener'><AiFillLinkedin/></a>
                     <a href='https://facebook.com' target="_blank" rel='noreferrer noopener'><AiFillFacebook/></a>

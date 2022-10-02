@@ -1,11 +1,13 @@
 import React from 'react'
 import Abimage from '../../images/about.jpg'
-import MissionImage from '../../images/mission.jpg'
+import MissionImage from '../../images/mission.svg'
+import ValueImage from '../../images/Value.jpg'
+import TeamImage from '../../images/Team.jpg'
 import './about.css'
 
 const About = () => {
   return (
-        <div id="about">
+        <div id="about">         
         <section className='about__story'>
           <div className='container about__story-container'>
             <div className='about__section-image'>
@@ -24,15 +26,15 @@ const About = () => {
               <h1>Our Mission</h1>
               <p>At OpenNidus, our mission is to: Create solutions that organically integrate with business processes, providing high level of flexibility to organization without compromising on its core values.  Address complexities in business process with innovative applications that has the capability to grow and evolve with the organization.</p>
             </div>
-            <div className='about__section-image'>
+            <div className='about__sections-image'>
               <img src={MissionImage} alt='Missionimage'/>
             </div>
           </div>
         </section>
         <section className='about__story'>
             <div className='container about__story-container'>
-              <div className='about__section-image'>
-                <img src={Abimage} alt='Storyimage'/>
+              <div className='about__sections-image'>
+                <img src={ValueImage} alt='Storyimage'/>
               </div>
               <div className='about__section-content'>
                 <h1>Values</h1>
@@ -51,7 +53,7 @@ const About = () => {
              improving an individual’s skills and career prospects through clearly defined growth paths.</p>
         </div>
         <div className='about__section-image'>
-          <img src={Abimage} alt='Teamimage'/>
+          <img src={TeamImage} alt='Teamimage'/>
         </div>
       </div>
 
