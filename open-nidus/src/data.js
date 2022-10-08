@@ -78,7 +78,8 @@ export const solution = [
         id:1,
         icon:<TbListDetails/>,
         title:"Nidus ERP",
-        desc:"Your organization’s success demands focus on many different aspects of business. Regardless of the size of the organization, operational complexities are a reality and the need for accurate record keeping, resource allocations, analysis, planning and reporting are necessary. Most businesses today cannot operate efficiently without some form of computer automation.Nidus ERP addresses the automation requirements of any organization involved any business irrespective of the size of operations. It provides a plethora of inter organizational communication protocols enables you to reduce delays in communications and make critical decisions in an effective and informed manner"
+        desc:"Your organization’s success demands focus on many different aspects of business. Regardless of the size of the organization, operational complexities are  a reality and the need for accurate record keeping, resource allocations, analysis, planning and reporting are necessary. Most businesses today cannot operate efficiently without some form of computer automation.Nidus ERP addresses the automation requirements of any organization involved any business irrespective of the size of operations. It provides a plethora of inter organizational communication protocols enables you to reduce delays in communications and make critical decisions in an effective and informed manner."
+        
     },
     {
         id:2,

@@ -1,28 +1,33 @@
 import React from 'react'
-import './solution.css'
-import { Link } from 'react-router-dom'
-import Abimage from '../../images/about.jpg'
+import SectionHead from '../../components/SectionHead'
+import { solution } from '../../data'
+import {GiCutDiamond} from 'react-icons/gi'
+import Card from '../../UI/Card'
 
 const Solution = () => {
   return (
-    <div className='about__header' id="solution">
-      <div className='container about__header-container'>   
-        <div className='about__header-left'>
-          
-          <div className='about__header-image'>
-            <img src={Abimage} alt='HeaderImage'/>
-          </div>
-        </div>
-        <div className='about__header-left'>
-          <h4>Softwaare Development</h4>
-          <h1>Leverage your Data to build Data driven applications.</h1>
-          <p>We help Start-ups and Enterprises build intelligent, data-driven and scalable applications by leveraging 
-            the power of Artificial Intelligence - Machine Learning, Data and Cloud. </p>
-            <Link to='/services' className='btn lg'>Get Started</Link>
-        </div> 
-      </div>
 
-    </div>
+    <section className='solution' id="solution">
+        <div className='container solution__container'>
+         <SectionHead className="solution__head" icon={<GiCutDiamond/>} title="Solution"/>        
+            <div className='solution__wrapper'>
+                {
+                    solution.map(({id,icon,title,desc})=>{
+                        return (
+                            <Card className="solution__solution" key={id}>
+                                <span>{icon}</span>
+                                <h4>{title}</h4>
+                                <small>{desc}</small>
+
+                            </Card>
+                        )
+                            
+                    })
+                }
+
+            </div>
+        </div>
+    </section>
   )
 }
 

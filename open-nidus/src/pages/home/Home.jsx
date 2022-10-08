@@ -7,6 +7,8 @@ import './home.css'
 import Service from '../services/Service'
 import Solution from '../solution/Solution'
 import Contact from '../contact/Contact'
+import Reacttable from '../../components/Reacttable'
+
 
 
 const Home = () => {
@@ -18,6 +20,7 @@ const Home = () => {
     <Solution/>
     <Testimonial/>
     <Contact/>
+    <Reacttable/>
     <Footer/>
     </>
   )
