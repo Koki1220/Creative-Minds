@@ -1,3 +1,5 @@
+
+ 
 import React, { useEffect, useState } from 'react'
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -8,25 +10,31 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import SectionHead from './SectionHead';
 import {BiTable} from 'react-icons/bi';
+import axios from 'axios'
 
 const Reacttable = () => {
 
-    const[data,setData]=useState([]);   
-    
+    const[data,setData]=useState([]); 
 
+    const getData= async() =>{
+      try{
+        const data = await axios.get("http://smartavatar.opennidus.com/s3/smartavatar/api/device")
+        console.log(data.data);
+        setData(data.data)
+      }
+      catch(e){
+        console.log(e)
+      }
+    }
     useEffect(()=>{
-        fetch("http://smartavatar.opennidus.com/s3/smartavatar/api/device")
-        .then(resp=>resp.json()) 
-        .then(resp=>{
-           
-            console.log(resp)
-            setData(resp)})
+      
+      getData()
     },[]) 
 
   return (
-    <div className='container programs__container'>
-       <SectionHead icon={<BiTable/>} title="React-Table" className="table__head"/>
-        
+    
+    <div className='container programs__container reacttable'>
+       <SectionHead icon={<BiTable/>} title="React-Table" className="table__head"/>        
         <TableContainer className='table__container' component={Paper}>
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead>

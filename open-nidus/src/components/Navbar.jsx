@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import logo from '../images/logo.svg'
 import {Link} from 'react-scroll'
-
 import './navbar.css'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -27,6 +27,7 @@ const Navbar = () => {
                     <li className='nav-item'>
                         <Link to='header'spy={true} smooth={true} offset={-100} duration={500}  onClick={closeMenu}>Home</Link>
                     </li>
+
                     <li className='nav-item'>
                         <Link to='about'spy={true} smooth={true} offset={-150} duration={500}  onClick={closeMenu}>About Us</Link>
                     </li>
@@ -38,6 +39,9 @@ const Navbar = () => {
                     </li>
                     <li className='nav-item'>
                         <Link to='contact' spy={true} smooth={true} offset={-155} duration={500} onClick={closeMenu}>Contact Us</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <NavLink to='/reacttable' onClick={closeMenu}>Dashboard</NavLink>
                     </li>
                 </ul>
             </nav>
