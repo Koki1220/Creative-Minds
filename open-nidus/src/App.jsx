@@ -4,6 +4,7 @@ import Home from './pages/home/Home'
 import Notfound from './pages/notfound/Notfound'
 import Navbar from './components/Navbar'
 import Reacttable from './components/Reacttable'
+import Signup from './components/signup'
 
 
 
@@ -16,6 +17,7 @@ const App = () => {
         <Route index element={<Home/>}/>
         
         <Route path='/reacttable' element={<Reacttable/>}/>
+        <Route path='/signup' element={<Signup />}/>
         <Route path='*' element={<Notfound/>}/>
 
       </Routes>
