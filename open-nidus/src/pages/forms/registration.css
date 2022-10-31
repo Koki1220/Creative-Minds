@@ -1,0 +1,131 @@
+/* Registration Form*/
+
+.signup__head{
+    justify-content: center;
+    margin-top: 8rem;
+}
+.signup-back{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70em;
+    height: 45em;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgba(156,156,156);
+}
+
+form{
+    display: flex;
+    width: 100%;
+    margin-left: 2rem;    
+    margin-right: 15rem;
+    margin-top: 1rem;
+    gap: 1.2rem;
+}
+input{
+    width: 90%;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    resize: none;
+}
+
+.signup-btn{
+    width: fit-content;
+    padding: 0.9rem 2rem;
+    background:  rgb(28, 28, 97);
+    color: #FFF;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    transition: var(--transition);
+
+}
+.lable-name{
+    margin: 0 auto;
+    margin-top: 0;
+    color:  rgb(28, 28, 97);
+}
+
+
+/*MEDIA QUERY (medium screen)*/
+
+@media screen and(max-width:1024px) {
+    .signup-back{
+        margin-left: rem;
+        margin-top: 2rem;
+        margin-right: 1rem;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: fit-content;
+        height: 50em;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1em;
+        box-shadow: 0 0.188em 1.550em rgba(156,156,156);
+    }
+    form{
+        display: flex;
+        width: 20%;
+        margin-left: 1rem;    
+        margin-top: 1rem;
+        gap: 1.2rem;
+    }
+    input{
+        width: 20%;
+        border-radius: 0.5rem;
+        background: transparent;
+        border: 2px solid var(--color-primary);
+        resize: none;
+    }
+    
+    
+    
+}
+
+/*MEDIA QUERY (Small screen)*/
+@media screen and (max-width:600px) {
+    .signup-back{
+        margin-left: 1rem;
+        margin-top: 2rem;
+        margin-right: 1rem;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1em;
+        box-shadow: 0 0.188em 1.550em rgba(156,156,156);
+
+    }
+    form{
+        display: flex;
+        width: 10%;
+        margin-left: 1rem;    
+        margin-top: 1rem;
+        gap: 1.2rem;
+    }
+    input{
+        width: 10%;
+        border-radius: 0.5rem;
+        background: transparent;
+        border: 2px solid var(--color-primary);
+        resize: none;
+    }
+    .lable-name{
+        margin-top: 0;
+        color:  rgb(28, 28, 97);
+    }
+    
+    
+}

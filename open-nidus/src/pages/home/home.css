@@ -36,19 +36,6 @@
     position: relative;
     
 }
-/*.main__header-circle{
-    width: 35rem;
-    height: 35rem;
-    background-color:linear-gradient(75deg,var( aquamarine), transparent);
-    border-radius: 50%;
-    position: absolute;
-    filter: blur(15px);
-
-}
-.main__header-image{
-    position: relative;
-
-}*/
 
 
 .table__head{
@@ -58,7 +45,6 @@
 .table__container{
     margin-top: 3rem;
 }
-
 
 
         /*====Testimonials===*/
@@ -166,6 +152,7 @@
     color:#FFF;
 }
 
+
             /*===Contact===*/
 
 .contact__container{
@@ -225,20 +212,8 @@ input,textarea{
     transition: var(--transition);
 
 }
-@media screen and (max-width:1024px) {
-    .contact__container{
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-}
-@media screen and (max-width:600px) {
-    .contact__container{
-         grid-template-columns: 1fr;
-        gap: 1.5rem;   
-    }
-    
-}
+
+
 
 /*====Footer===*/
 
@@ -268,6 +243,7 @@ footer{
     font-size: 1rem;
 }
 .footer__container article .footer__link{
+    cursor: pointer;
     color: #fff;
 }
 .footer__socials{
@@ -296,10 +272,6 @@ footer{
 
 }
 
-
-
-
-
 /* Modal Button */
 .modalButton {
     position: fixed;
@@ -313,6 +285,102 @@ footer{
   
 
 
+/*==== MEDIA QUERIES (medium screen)*/
+
+@media screen and (max-width:1024px) {
+    .main__heade{
+        height: fit-content;
+        padding: 12rem 0;
+    }
+    .main__header-container{
+        gap: 0;
+    }
+
+    .solution__wrapper{
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+
+    }
+    .contact__container{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact__option{
+        margin-left: 50%;
+        width: 60%;
+    }
+    .testimonials{
+        width: 80%;
+    }
+    .footer__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        margin-top: 3rem;
+    }   
+    .table__container{
+        width:fit-content;
+    }
+    
+    
+}
+
+/* MEDIA QUERIES (medium screen*/
+@media screen and (max-width:600px) {
+    .main__heade{
+        margin-top: 0;
+        padding: 12rem 0;
+        height: 100vh;
+    }
+    .main__header-right{
+        display: none;
+    }
+    .main__header-container{
+        grid-template-columns: 1fr;
+    }
+    .solution__wrapper{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+
+    }
+    .card.solution__solution{
+        width: 84%;
+        margin-inline: auto ;
+    }
+    .testimonials{
+        width: 100%;
+        
+    }
+
+    .contact__container{        
+        grid-template-columns: 1fr;
+        gap: 1.5rem;   
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact__options{
+        display: none;
+
+    }
+    .footer{
+        margin-top: 7rem;
+    }
+    .footer__container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .footer__container article{
+        align-items: center;
+    }
+    .footer__container article p{
+        text-align: center;
+    }
+    .table__container{
+        width: 100%;
+    
+    }
+}
 
  
   

@@ -26,8 +26,7 @@ const Reacttable = () => {
         console.log(e)
       }
     }
-    useEffect(()=>{
-      
+    useEffect(()=>{      
       getData()
     },[]) 
 

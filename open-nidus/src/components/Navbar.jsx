@@ -43,6 +43,9 @@ const Navbar = () => {
                     <li className='nav-item'>
                         <NavLink to='/reacttable' onClick={closeMenu}>Dashboard</NavLink>
                     </li>
+                    <li className='nav-item'>
+                        <NavLink to='/registration' onClick={closeMenu}>Signup</NavLink>
+                    </li>
                 </ul>
             </nav>
         </div>

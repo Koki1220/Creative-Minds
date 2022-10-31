@@ -54,7 +54,7 @@
 }
 
 
-@media screen and (max-width:940px) {
+@media screen and (max-width:1024px) {
     .header {
         max-width: 100%;
         background-color:var(--color-primary);
@@ -65,7 +65,7 @@
         max-width: 100%;
         background: transparent;
         font-size: 1.8rem;
-        cursor: url("https://img.icons8.com/nolan/32/hand-cursor.png"), auto;
+        
     }
 
     .hamburger {
@@ -75,24 +75,24 @@
 
     .nav-menu {
         position: fixed;
-        right: -100%;
+        right: -95%;
         top: 90px;
         flex-direction: column;
         background-color: var(--color-primary);
         width: 50%;
-        height: 90vh;
-        z-index: 1000;
+        height: fit-content;
         text-align: center;
+        gap: 0;
         
     }
 
     .nav-menu.active {
-        right: 0;
+        right: 5rem;
+        margin-top: 1%;
+        
     }
 
-    .nav-item {
-        margin: 1.5rem 0;
-    }
+    
 
     .header .navbar img {
         width: 150px;
