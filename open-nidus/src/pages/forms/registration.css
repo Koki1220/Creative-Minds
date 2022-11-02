@@ -34,6 +34,9 @@ input{
     border: 2px solid var(--color-primary);
     resize: none;
 }
+lable{
+    color: red;
+}
 
 .signup-btn{
     width: fit-content;
@@ -57,7 +60,7 @@ input{
 
 @media screen and(max-width:1024px) {
     .signup-back{
-        margin-left: rem;
+        margin-left: 2rem;
         margin-top: 2rem;
         margin-right: 1rem;
         background-color: white;

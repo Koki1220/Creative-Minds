@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import Bgimage from '../images/devbg.jpg'
+import Scrolltop from './Scrolltop'
 
 
 const Header = () => {
   return (
     <header className='main__header' id="header">
+      <Scrolltop/>
       <div className='container main__header-container'>      
         <div className='main__header-left'>          
           <h1>Nidus ERP is welcoming you for the world of web designing and development.</h1>

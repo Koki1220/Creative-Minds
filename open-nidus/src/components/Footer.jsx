@@ -3,9 +3,12 @@ import Logo from '../images/logo.svg';
 import {AiFillLinkedin,AiFillTwitterCircle,AiFillFacebook,AiFillInstagram} from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
 
+
 const Footer = () => {
+    
   return (
-    <footer>
+    <footer>       
+        
             <div className='container footer__container'>
             <article>
                 <Link to="/" className='logo'>
@@ -41,6 +44,7 @@ const Footer = () => {
                 <NavLink to="/support" className='footer__link'>Support</NavLink>
             </article>
         </div>
+        
         <div className='footer__copyright'>
             <small>2022 OPEN NIDUS &copy; All Rights Reserved</small>
         </div>
