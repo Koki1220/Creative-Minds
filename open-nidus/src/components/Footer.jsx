@@ -20,7 +20,7 @@ const Footer = () => {
                     <a href='https://instagram.com' target="_blank" rel='noreferrer noopener'><AiFillInstagram/></a>
                 </div>
             </article>
-            <article >
+            <article clas>
                 <h4>Permalinks</h4>
                 <Link to='about'spy={true} smooth={true} offset={-150} duration={500}className='footer__link'>About Us</Link>
                 <Link to='service' spy={true} smooth={true} offset={-150} duration={500}  className='footer__link'>Services</Link>
