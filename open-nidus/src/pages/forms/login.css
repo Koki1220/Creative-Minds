@@ -37,6 +37,9 @@ input{
     border: 2px solid var(--color-primary);
     resize: none;
 }
+lable{
+    color: red;
+}
 .login-btn{
 
     width: 30%;
