@@ -32,12 +32,15 @@ const Login = () => {
           "password" : password
         }
         await saveFormData(data).then(e=>{
-          console.log(e);
-          resetForm();
-          setIsLoading(false);
-          alert("Login successfully!");
-          navigate('/reacttable')
-          
+          if(e.data && e.data.token) {
+            resetForm();
+            setIsLoading(false);
+            alert("Login successfully!");
+            navigate('/reacttable')
+          } else {
+            setIsLoading(false);
+            alert("Unauthorized User!");
+          }
         });
       }
       catch (e) {
@@ -51,9 +54,9 @@ const Login = () => {
     }
   
     const saveFormData = async(data)=>{
-      const res = await axios.post("http://localhost:9003/s3/smartavatar/api/users/login",data);
+      const res = await axios.post("http://smartavatar.opennidus.com/s3/smartavatar/api/users/login",data);
       if (res.status !== 200) {
-        
+        throw new Error(`Request failed: ${res.status}`); 
       }
       return res;
     }
