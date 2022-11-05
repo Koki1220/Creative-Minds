@@ -58,7 +58,7 @@ const Registration = () => {
     }
 
     const saveFormData = async(requestParam)=>{
-      const response = await axios.post("http://localhost:9003/s3/smartavatar/api/users",requestParam);
+      const response = await axios.post("http://smartavatar.opennidus.com/s3/smartavatar/api/users",requestParam);
       if (response.status !== 200) {
         throw new Error(`Request failed: ${response.status}`); 
       }
