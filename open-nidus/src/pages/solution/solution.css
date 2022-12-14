@@ -1,4 +1,4 @@
-
+/*
 .solution__container{
     margin-top: 4rem;
 }
@@ -36,3 +36,79 @@
 }
 
 
+*/
+
+
+/*====Solution===*/
+
+
+.solution__container {
+    margin-top: 4rem;
+}
+
+.solution__head {
+    justify-content: center;
+
+}
+
+.solution__wrapper {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.btns .sd {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: fixed;
+    border: 1px solid var(--color-primary);
+    border-radius: 0.6rem;
+    color: #FFF;
+    cursor: pointer;
+
+}
+
+span {
+    color: var(--color-primary);
+
+}
+
+span:hover {
+    color: #FFF;
+    padding: 1rem 2rem 1rem;
+    border-radius: 0 1rem 1rem 0;
+    background-color: var(--color-primary);
+}
+
+.solution-right {
+    background-color: var(--color-primary);
+    border-radius: 1em 0 1rem 0;
+    box-shadow: 0 0.188em 1.550em rgba(156, 156, 156);
+}
+
+.icon {
+    margin-top: -1.5rem;
+    width: 8%;
+    height: 50px;
+    color: #FFF;
+    background-color: #4faddb;
+    margin-left: 5%;
+    border-radius: 0.4rem;
+}
+
+.title h1 {
+    color: #4faddb;
+    margin-left: 40%;
+}
+
+.body p {
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem 2rem 3rem;
+    font-weight: bold;
+
+
+}

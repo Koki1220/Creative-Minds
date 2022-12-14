@@ -10,7 +10,7 @@
 :root{
     --primary-hue:280;
     --gray-hue:240;
-    --color-primary:hsl(var(--primary-hue),100%,50%);
+    --color-primary:rgb(11, 13, 134);
     --color-primary-variant:hsl(var(--primary-hue),100%,65%);
     --color-secondary:rgb(189, 95, 108);
     --color-white:#FFF;
@@ -63,13 +63,16 @@ img{
     width: fit-content;
     margin: 0 auto;
     padding: 0.9rem 2rem;
-    background:  rgb(219, 88, 160);
+    background: #000075;
+    
     border-radius: 1.5rem;
     transition: var(--transition);
 }
 .btn:hover{
-    background: rgb(83, 12, 175);
-    color: #FFF;
+    color: rgb(107, 32, 151);
+    background: #FFF;
+    border: solid 1px rgb(107, 32, 151);;
+    font-weight: bold;
 }
 .btn .lg{
     padding: 1.2rem 3rem;
@@ -90,6 +93,32 @@ img{
     color: #FFF;
 }
 
+.btns{
+    color: #FFF;
+    width: 1px;
+    padding: 1rem 2rem 1rem;    
+    background: #4faddb;    
+    border-radius:  1rem 0 0 1rem ;
+    transition: var(--transition);
+}
+.btns:hover{
+    color: #FFF;
+    background: var(--color-primary);
+    border: solid 1px #4faddb;;
+    font-weight: bold;
+}
+.btns .sd{
+
+    width: 50%;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+
+
 
 
 section{
@@ -104,7 +133,7 @@ section{
     color: var(--color-primary);
 }
 .section__head h2{
-    color: var(--color-primary);
+    color:  var(--color-primary);
     
 }
 .section__head span{
@@ -131,8 +160,7 @@ section{
 .card span{
     width: 3rem;
     height: 3rem;
-    background: rgb(11, 13, 134);
-    color:goldenrod;
+    background:  #4faddb;
     font-size: 1.5rem;
     padding: 0.8rem;
     display: grid;
@@ -144,7 +172,7 @@ section{
 }
 
 .card h4{
-    color: rgb(90, 16, 74);
+    color: rgb(24, 184, 233);
     font-weight: 800;
 }
 

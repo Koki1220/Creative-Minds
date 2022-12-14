@@ -52,16 +52,12 @@ const Login = () => {
     }
   
     const saveFormData = async(data)=>{
-      const res = await axios.post("http://smartavatar.opennidus.com/s3/smartavatar/api/users/login",data);
+      const res = await axios.post("http://localhost:9003/s3/smartavatar/api/users/login",data);
       if (res.status !== 200) {
         throw new Error(`Request failed: ${res.status}`); 
       }
       return res;
     }
-
-
-
-
 
   return (
     <div>

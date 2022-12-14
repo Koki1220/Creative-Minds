@@ -1,5 +1,5 @@
 import {Link} from 'react-scroll';
-import Logo from '../images/logo.svg';
+import Logo from '../images/flogo.png';
 import {AiFillLinkedin,AiFillTwitterCircle,AiFillFacebook,AiFillInstagram} from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ const Footer = () => {
         
             <div className='container footer__container'>
             <article>
-                <Link to="/" className='logo'>
+                <Link to="header" className='logo'>
                     <img src={Logo} alt='Footer Logo'/>
                 </Link>
                 <p>Nidus ERPis give you the best company to satisfy your project in the good manner.
@@ -23,7 +23,7 @@ const Footer = () => {
                     <a href='https://instagram.com' target="_blank" rel='noreferrer noopener'><AiFillInstagram/></a>
                 </div>
             </article>
-            <article clas>
+            <article>
                 <h4>Permalinks</h4>
                 <Link to='about'spy={true} smooth={true} offset={-150} duration={500}className='footer__link'>About Us</Link>
                 <Link to='service' spy={true} smooth={true} offset={-150} duration={500}  className='footer__link'>Services</Link>

@@ -1,13 +1,14 @@
 .header {
     position: fixed;
-    height: 90px;
+    height: 80px;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
-    background-color:var(--color-primary);
+    border: 1px solid var(--color-gray-100);
+    background-color:var( --color-white);
 }
 
 .header .navbar {
@@ -21,13 +22,17 @@
     
 }
 
-.header .nav-menu a {
-    color: #ffffff;
+.header .nav-menu a {    
+    color: var(--color-primary);
 }
 
 .header .navbar img {
-    width: 250px;
-    height: auto;
+    width: 200px;
+    height: 78px;
+    padding: 2px 2px 2px 2px;
+    cursor: pointer;
+    
+   
 }
 
 .header .nav-menu {
@@ -41,7 +46,7 @@
 }
 .nav-item .active{
     padding-bottom: 12px;
-    border-bottom: 3px solid #eef4f8;
+    border-bottom: 3px solid #4faddb;
 }
 
 .header .nav-item a:hover {
@@ -52,7 +57,10 @@
 .hamburger {
     display: none;
 }
-
+.nav-right{
+    text-align: right;
+    
+}
 
 @media screen and (max-width:1024px) {
     .header {
@@ -78,7 +86,7 @@
         right: -95%;
         top: 90px;
         flex-direction: column;
-        background-color: var(--color-primary);
+        background-color: #FFF;
         width: 50%;
         height: fit-content;
         text-align: center;
@@ -91,8 +99,6 @@
         margin-top: 1%;
         
     }
-
-    
 
     .header .navbar img {
         width: 150px;

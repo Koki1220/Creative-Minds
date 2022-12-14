@@ -10,11 +10,13 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import SectionHead from './SectionHead';
 import {BiTable} from 'react-icons/bi';
+import {useNavigate} from 'react-router-dom'
 import axios from 'axios'
 
 const Reacttable = () => {
 
     const[data,setData]=useState([]); 
+    const navigate=useNavigate();
 
     const getData= async() =>{
       try{
@@ -29,6 +31,15 @@ const Reacttable = () => {
     useEffect(()=>{      
       getData()
     },[]) 
+
+    const logOut=(e)=>{
+      e.preventDefault();
+      console.clear();
+      alert("Logout Scessfully")
+      navigate('/')
+
+
+    }
 
   return (
     
@@ -67,6 +78,7 @@ const Reacttable = () => {
             </TableBody>
           </Table>
         </TableContainer>
+        <button className="btn-log" onClick={logOut}>Logout</button>
 
     </div>
   )

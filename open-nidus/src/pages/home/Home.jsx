@@ -7,6 +7,7 @@ import './home.css'
 import Service from '../services/Service'
 import Solution from '../solution/Solution'
 import Contact from '../contact/Contact'
+import Navbar from '../../components/Navbar'
 
 
 
@@ -15,6 +16,7 @@ import Contact from '../contact/Contact'
 const Home = () => {
   return (
     <>
+    <Navbar />
     <Header/>
     <About/>
     <Service/>

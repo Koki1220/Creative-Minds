@@ -3,13 +3,13 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import logo from '../images/logo.svg'
 import {Link} from 'react-scroll'
 import './navbar.css'
-import { NavLink } from 'react-router-dom'
+{/*import { NavLink } from 'react-router-dom'*/}
 
 const Navbar = () => {
-
+    
+    
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
-
     const closeMenu = () => setClick(false)
 
     return (
@@ -40,12 +40,13 @@ const Navbar = () => {
                     <li className='nav-item'>
                         <Link to='contact' spy={true} smooth={true} offset={-155} duration={500} onClick={closeMenu}>Contact Us</Link>
                     </li>
-                    <li className='nav-item'>
-                        <NavLink to='/reacttable' onClick={closeMenu}>Dashboard</NavLink>
-                    </li>
-                    <li className='nav-item'>
+
+                    {/*<li className='nav-item'>
                         <NavLink to='/registration' onClick={closeMenu}>Signup</NavLink>
                     </li>
+                    <li className='nav-item'>
+                        <NavLink to='/login' onClick={closeMenu}>Login</NavLink>
+                    </li>*/}
                 </ul>
             </nav>
         </div>
