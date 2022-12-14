@@ -178,15 +178,16 @@
 
 span {
     color: var(--color-primary);
+    font-weight: bold;
 
 }
 
-span:hover {
+/*span:hover {
     color: #FFF;
     padding: 1rem 2rem 1rem;
     border-radius: 0 1rem 1rem 0;
     background-color: var(--color-primary);
-}
+}*/
 
 .solution-right {
     background-color: var(--color-primary);

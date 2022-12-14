@@ -56,16 +56,17 @@
 .services__modal-content{
     width: 900px;
     position: relative;
-    background-color: #9bc5da;
+    background-color: #FFF;
     padding: 4.5rem 2.5rem 2.5rem;
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0.188em 1.550em var(--color-primary);
     
 }
 
 .services__modal-content p{
-    color:#FFF;
+    color:var(--color-primary);
 }
 
 .services__modal-close{
@@ -73,14 +74,14 @@
     top: 1.5rem;
     right: 1.5rem;
     font-size: 1.5rem;
-    color: #FFF;
+    color: var(--color-primary);
     cursor: pointer;
 }
 .services__modal-services{
     row-gap: 0.75rem;
 }
 .services__modal-title{
-    color: var(--color-primary);
+    color: #4faddb;
     text-align: center;
     justify-content: center;
 }
