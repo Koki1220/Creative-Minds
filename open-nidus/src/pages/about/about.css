@@ -1,71 +1,75 @@
-.about__section-image{
-    border-radius: 50%;
-    overflow: hidden;
-    transform: skew(0);
-    transition: var(--transition);
+.about__container{
+    margin-top: 1rem;
+}
+.about__head{
+    justify-content: center;
+
+}
+.content-back{
+    margin-left: 10rem;
+    margin-top: 3rem;
+    background-color: white;
+    width: 70em;
+    height: 30em;
+    border-radius: 1em;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    position: relative;
+    box-shadow: 0 0.188em 1.550em rgba(156,156,156);
     
 }
-
-/*.about__section-image:nth-child(4){
-    transform: skew(-15deg);
-
-}*/
-
-.about__section-image:hover{
-    transform: skew(0);
+.content-back{
+    display: none;
 }
-.about__section-content h1{
-    margin-bottom: 1.5rem;
+.containers{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    justify-content: center;
+
+    
+}
+.about-btns{    
+    width: 13%;
+    height: 50px;
+    background-color: #4faddb;
+    color: #FFF;
+    border-radius: 25px;
+    padding: 15px 1px 1px 1px;
+    cursor: pointer;
+}
+.active-btns{
+    position: relative;
+    background-color: #FFF;
+    border: 1px solid #4faddb;
     color: var(--color-primary);
 }
-.about__section-content p{
-    margin-bottom: 1rem;
-    color: var(--color-gray-500);
-
+.active-btns h3{
+    color: #4faddb;
 }
-.about__story-container{
-    display: grid;
-    grid-template-columns: 40% 50%;
-    gap: 10%;
+.abt-image{
+    width: 480px;
+    height: 480px;
+    border-radius: 1rem 0  0 1rem;
 }
-.about__mission-container,.about__team-container {
-    display: grid;
-    grid-template-columns: 50% 40%;
-    gap: 10%;
-
+.abt-us  h2{
+    color: var(--color-primary);
+    margin-left: 35%;
+    margin-top: 4rem;
 }
-
-/*===MEADIA QUERIES (medium screen)====*/
-@media screen and(max-width:1024px) {
-    .about__section-image{
-        width: 60%;
-        grid: row;
-    }
-    .about__section-content h1{
-        margin-bottom: 1.2rem;
-    }
-    .about__story-container,
-    .about__mission-container,
-    .about__team-container{
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-    
+.abt-us h4{
+    padding: 1rem 2rem 3rem;
+    color: #4faddb;
+    font-weight: bold;
+    text-align: justify;
+    justify-content: center;
 }
-
-/*===MEADIA QUERIES (small screen)====*/
-
-@media screen and (max-width:600px) {
-    .about__section-image{
-        width: 80%;
-        padding: 12rem 0;
-        height: 100vh;
-        grid-template-columns: 50%;
-        margin-inline: auto;
-    }
-    
-    .about__section-content h1{
-        text-align: start;
-    }
-    
+.mission h2{
+    color: var(--color-primary);
+    margin-left: 35%;
+    margin-top: 0.2rem;
+}
+.active-about{
+    display: flex;
 }

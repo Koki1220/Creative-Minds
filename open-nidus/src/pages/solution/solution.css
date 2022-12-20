@@ -8,7 +8,7 @@
 }
 .solution__wrapper{
     display: grid;
-    grid-template-columns: 10% 90% ;
+    grid-template-columns: 12% 90% ;
     gap: 3rem;
     margin-top: 4rem;
 }
@@ -74,7 +74,7 @@ span{
 }
 
 .tab-content{
-    margin-left: 25%;
+    margin-left: 30%;
     margin-top: 5%;
     height: fit-content;
     background-color: var(--color-primary);

@@ -38,10 +38,41 @@
 }
 
 .main__header-right {
-    display: grid;
-    position: relative;
+    display: flex;
+}
+.img{
+   background-color: 1px solid #4faddb;
+}
+
+.figures{
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    background: var(--color-gray-100);
+    width: fit-content;
+    padding: 0.7rem;
+    border: 1px solid transparent;
+    border-radius: 0.6rem;
+    transition: var(--transition);
+    
+}
+.figures div{
+    display: flex;
+    flex-direction: column;
+}
+.figures div h4{
+    color: var(--color-primary);
+    font-size: 2rem;
 
 }
+.figures div small{
+    color: var(--color-gray-400);
+    text-transform: uppercase;
+
+}
+
+
 
 
 .table__head {
