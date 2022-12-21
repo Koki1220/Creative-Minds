@@ -7,13 +7,13 @@
 }
 
 .main__header-container {
-    height: 100%;
+    height: 700px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-between;
-    margin-top: 4rem;
-    gap: 6rem;
+    margin-top: 5rem;
+    
 }
 
 .main__header-left {
@@ -39,9 +39,6 @@
 
 .main__header-right {
     display: flex;
-}
-.img{
-   background-color: 1px solid #4faddb;
 }
 
 .figures{
@@ -282,7 +279,7 @@ span {
 
 .contact__option-icon {
     font-size: 1.5rem;
-    margin-bottom: 0.rem;
+    margin-bottom: 0.3rem;
     text-align: center;
 
 }
@@ -434,86 +431,57 @@ footer {
 /*==== MEDIA QUERIES (medium screen)*/
 
 @media screen and (max-width:1024px) {
-    .main__heade {
-        height: fit-content;
-        padding: 12rem 0;
+    .main__heade{
+        height: fit-content;        
     }
-
-    .main__header-container {
-        gap: 0;
-    }
-
-    .solution__wrapper {
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-
-    }
-
+    .main__header-container{    
+        margin-top: 5rem;
+    }    
     .contact__container {
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
     }
-
     .contact__option {
         margin-left: 50%;
-        width: 60%;
+        width: 60%;        
     }
-
+    .contact__btn{
+        margin-bottom: 3rem;
+    }
     .testimonials {
         width: 80%;
     }
-
     .footer__container {
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
-
     .table__container {
         width: fit-content;
     }
-
-
 }
 
 /* MEDIA QUERIES (medium screen*/
 @media screen and (max-width:600px) {
-    .main__heade {
+    .main__heade{
         margin-top: 0;
         padding: 12rem 0;
         height: 100vh;
     }
-
-    .main__header-right {
+    .main__header-container{    
+        margin-top: 10rem;
+    }
+    .main__header-right{
         display: none;
     }
-
-    .main__header-container {
+    .main__header-container{
         grid-template-columns: 1fr;
     }
-
-    .solution__wrapper {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-
-    }
-
-    .card.solution__solution {
-        width: 84%;
-        margin-inline: auto;
-    }
-
     .testimonials {
         width: 100%;
-
     }
-    .service__container{
-        
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    } 
-
+    
     .contact__container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -528,7 +496,7 @@ footer {
     }
 
     .footer {
-        margin-top: 7rem;
+        margin-top: 8rem;
     }
 
     .footer__container {

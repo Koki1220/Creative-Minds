@@ -21,38 +21,35 @@ const Solution = () => {
           <SectionHead className="solution__head" icon={<GiCutDiamond/>} title="Solution" />
           <div className='solution__wrapper'>
             <div className='tabs'>
-              <div  className={toggleTab === 1 ? 'sigle-tab active-tab':'sigle-tab active-tab' }
+              <div  className={toggleTab === 1 ? 'sigle-tab active-tab':'sigle-tab' }
                onClick={()=>toggleState(1)}>                
                 <button to='' className='btns sd'><TbListDetails/></button>
                 <span>  Nidus ERP</span>
               </div>
-              <div className={toggleTab === 2 ? 'sigle-tab active-tab':'sigle-tab active-tab' }
+              <div className={toggleTab === 2 ? 'sigle-tab active-tab':'sigle-tab' }
               onClick={()=>toggleState(2)}>
                 <button to='' className='btns sd'><MdQueryStats/></button>
                 <span> Why Nidus ERP?</span>
               </div>
-              <div className={toggleTab === 3 ? 'sigle-tab active-tab':'sigle-tab active-tab' }
+              <div className={toggleTab === 3 ? 'sigle-tab active-tab':'sigle-tab' }
               onClick={()=>toggleState(3)}>
                 <button to='' className='btns sd'><AiOutlineDeploymentUnit/></button>
                 <span>  Deployment Models</span>
               </div>
-              <div className={toggleTab === 4 ? 'sigle-tab active-tab':'sigle-tab active-tab' }
+              <div className={toggleTab === 4 ? 'sigle-tab active-tab':'sigle-tab' }
               onClick={()=>toggleState(4)}>
                <button to='' className='btns sd'><CgIfDesign/></button >
-               <span> Customization</span>
-               
+               <span> Customization</span>               
               </div>       
-              <div className={toggleTab === 5 ? 'sigle-tab active-tab':'sigle-tab active-tab' }
+              <div className={toggleTab === 5 ? 'sigle-tab active-tab':'sigle-tab' }
               onClick={()=>toggleState(5)}>
                <button to='' className='btns sd'><MdSecurity/></button >
-               <span>  Security</span>
-               
+               <span>  Security</span>               
               </div>
-              <div className={toggleTab === 6 ? 'sigle-tab active-tab':'sigle-tab active-tab' }
+              <div className={toggleTab === 6 ? 'sigle-tab active-tab':'sigle-tab' }
               onClick={()=>toggleState(6)}>
                <button to='' className='btns sd'><MdTrackChanges/></button >
-               <span> Innovation</span>
-               
+               <span> Innovation</span>               
               </div>
             </div>
             <div className='tab-content'>
@@ -100,8 +97,8 @@ const Solution = () => {
                 <div className='body'>
                   <p>Customization capabilities are extensive throughout the product, with the product menu and user interface being fully customizable and configurable per user. Nidus ERP’s modularity supports extensive customization with minimal cost.</p>
                 </div>
-
               </div>
+              
               {/* Security */}
               <div className={toggleTab ===5 ? 'content active-content':'content'}>
                 <MdSecurity className='icon' />
@@ -111,8 +108,8 @@ const Solution = () => {
                 <div className='body'>
                   <p>Your data is the lifeblood of your organization and the integrity and security of that data is a top priority. Nidus ERP incorporates system-wide facilities aimed at securing the system from unauthorized access. Over and above this, security can be set throughout the system by operator or by role. Securities can also be set per operator against transactions and activities.</p>
                 </div>
-
               </div>
+
               {/* Innovation */}
               <div className={toggleTab ===6 ? 'content active-content':'content'}>
                 <MdTrackChanges className='icon' />
@@ -122,13 +119,9 @@ const Solution = () => {
                 <div className='body'>
                   <p>With an ongoing feedback from our existing customers along with evaluation business and technology trends, Nidus ERP is a continuously evolving product to ensure your business has access to latest technologies and practices to provide your business an edge over others.</p>
                 </div>
-
               </div>
             </div>
-
           </div>
-
-
         </div>
       </section>
     </Fragment>

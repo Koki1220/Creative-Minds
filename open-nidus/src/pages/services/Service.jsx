@@ -28,7 +28,7 @@ const Service = () => {
           <h4>Custom Software Development</h4>
           <p className='services__modal-description'>
             We strongly believe that the success of any custom software development process depends largely
-            on the level communication...</p>
+            on the level communication,planning, collaboration...</p>
 
           <button className='services__btn' onClick={() => toggleTab(1)}> View More</button>
           <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
@@ -48,13 +48,11 @@ const Service = () => {
                     solution to the final delivery involving training and handholding necessary for organizational integration.
                     We build enterprise applications that cater to specific needs of client business that adapts dynamically needs that evolves on implementation.</p>
                 </li>
-
               </ul>
             </div>
-
-
           </div>
         </div>
+        
         <div className='services-content'>
           <div>
             <img src={productimage} alt='' />
@@ -62,7 +60,7 @@ const Service = () => {
           <h4>Outsourced Product Development</h4>
           <p className='services__modal-description'>
             With ever increasing business complexities and rapid market changes, there is an increasing urgency
-            for all companies...</p>
+            for all companies to leverage technology solutions while improving focus on your...</p>
 
           <button className='services__btn' onClick={() => toggleTab(2)}> View More</button>
 
@@ -82,6 +80,7 @@ const Service = () => {
               </ul>
             </div>
           </div>
+
         </div>
         <article className='our__service'>
           <div className='service__head'>
@@ -110,10 +109,9 @@ const Service = () => {
             </li>
           </ul>
         </article>
+        
       </div>
-
     </section>
-
 
   )
 }

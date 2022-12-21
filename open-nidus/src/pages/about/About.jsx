@@ -15,7 +15,7 @@ const About = () => {
       <div id="about">
         <section className='about__story'>
           <div className='about__container'>
-          <SectionHead className="about__head " icon={<FaUsers/>}  title="About-Us" />
+          <SectionHead className="about__head" icon={<FaUsers/>}  title="About-Us"/>
           <div className='about__container containers'>
             <div className={toggleTab === 1 ? 'about-btns active-btns':'about-btns' }
               onClick={()=>toggleState(1)}>
