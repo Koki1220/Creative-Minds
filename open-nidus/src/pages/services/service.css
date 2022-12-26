@@ -27,11 +27,12 @@
 .services__btn{
     width: fit-content;
     margin: 0 auto;
+    margin-top: 1rem;
     padding: 0.9rem 2rem;
     background:  #4faddb;
     color: #FFF;
     display: flex;
-    margin-bottom:2rem;
+    margin-bottom:-2rem;
     border-radius: 20px;
     transition: var(--transition);
 }

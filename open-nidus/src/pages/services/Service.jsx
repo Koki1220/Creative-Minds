@@ -28,7 +28,7 @@ const Service = () => {
           <h4>Custom Software Development</h4>
           <p className='services__modal-description'>
             We strongly believe that the success of any custom software development process depends largely
-            on the level communication,planning, collaboration...</p>
+            on the level communication,planning, collaboration,and...</p>
 
           <button className='services__btn' onClick={() => toggleTab(1)}> View More</button>
           <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>

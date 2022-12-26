@@ -38,7 +38,9 @@ const About = () => {
               <h4>Our vision is to be a leading solutions provider in ERP and e-marketplace in productized services offerings, serving global customers.</h4>
               <div className='mission'>
               <h2>Our Mission</h2>
-              <h4>Our vision is to be a leading solutions provider in ERP and e-marketplace in productized services offerings, serving global customers.</h4>
+              <h4>Our mission is to Create solutions that organically integrate with business processes, providing high level of flexibility to organization without compromising on its core values.
+                Address complexities in business process with innovative applications that has the capability to grow and evolve with the organization.
+              </h4>
               </div>
             </div>
           </div>
