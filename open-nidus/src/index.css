@@ -64,7 +64,7 @@ img{
     margin: 0 auto;
     padding: 0.9rem 2rem;
     background: #000075;
-    
+    cursor: pointer;
     border-radius: 1.5rem;
     transition: var(--transition);
 }
@@ -78,6 +78,7 @@ img{
     padding: 1.2rem 3rem;
     border-radius: 2rem;
     font-size: 1.1rem;
+    
 
 }
 .btn .lg.arrow{

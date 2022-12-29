@@ -26,9 +26,9 @@ const Service = () => {
             <img src={custimage} alt='' />
           </div>
           <h4>Custom Software Development</h4>
-          <p className='services__modal-description'>
+          <p>
             We strongly believe that the success of any custom software development process depends largely
-            on the level communication,planning, collaboration,and...</p>
+            on the level communication,planning...</p>
 
           <button className='services__btn' onClick={() => toggleTab(1)}> View More</button>
           <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
@@ -58,9 +58,9 @@ const Service = () => {
             <img src={productimage} alt='' />
           </div>
           <h4>Outsourced Product Development</h4>
-          <p className='services__modal-description'>
+          <p>
             With ever increasing business complexities and rapid market changes, there is an increasing urgency
-            for all companies to leverage technology solutions while improving focus on your...</p>
+            for all companies to leverage technology solutionsr...</p>
 
           <button className='services__btn' onClick={() => toggleTab(2)}> View More</button>
 
