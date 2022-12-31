@@ -27,9 +27,9 @@
 }
 
 .header .navbar img {
-    width: 200px;
+    width: 260px;
     height: 78px;
-    padding: 2px 2px 2px 2px;
+    padding: 2px 2px 2px 1px;
     cursor: pointer;
     
    
@@ -106,7 +106,51 @@
     }
 
     .header .navbar img {
-        width: 150px;
+        width: 300px;
+    }
+}
+@media screen and (max-width:600px){
+    .header {
+        max-width: 100%;
+        background-color: var(--color-primary);
+
+    }
+
+    .header .navbar {
+        max-width: 100%;
+        background: transparent;
+        font-size: 1.8rem;
+        
+    }
+
+    .hamburger {
+        display: inline-block;
+        color: var(--color-primary);
+        cursor: pointer;
+        
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -95%;
+        top: 90px;
+        flex-direction: column;
+        background-color: #FFF;
+        width: 50%;
+        height: fit-content;
+        text-align: center;
+        gap: 0;
+        
+    }
+
+    .nav-menu.active {
+        right: 5rem;
+        margin-top: 1%;
+        
+    }
+
+    .header .navbar img {
+        width: 280px;
     }
 }
 

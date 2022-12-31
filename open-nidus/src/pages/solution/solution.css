@@ -19,16 +19,7 @@ p{
     text-align: justify;
 
 }
-.invation-img{
-    display: flex;
-    width: 45%;
-    height: 70%;
-    gap: 2rem;
-    margin-left: 5rem;
-    margin-top: 1rem;   
-    display: none; 
-    
-}
+
 
 /*MEDIA QUERIES (medium screen)*/
 
@@ -36,15 +27,6 @@ p{
     .service__container{
         width: 100%;
 
-    }
-    .invation-img{
-        display: flex;
-        width: 80%;
-        height: 30%;
-        gap: 2rem;
-        margin-left: 5rem;
-        margin-top: 1rem;    
-        
     }
     
 }
@@ -54,9 +36,6 @@ p{
     .service__container{
         width: 100%;
 
-    }
-    .invation-img{
-        display: none;
     }
     
     

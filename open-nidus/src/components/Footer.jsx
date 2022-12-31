@@ -1,5 +1,5 @@
 import {Link} from 'react-scroll';
-import Logo from '../images/flogo.png';
+import Logo from '../images/logo-big.png';
 import {AiFillLinkedin,AiFillTwitterCircle,AiFillFacebook,AiFillInstagram} from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
 

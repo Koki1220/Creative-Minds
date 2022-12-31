@@ -1,8 +1,6 @@
-import React,{Fragment, useState } from 'react'
+import React,{Fragment} from 'react'
 import SectionHead from '../../components/SectionHead'
 import { GiCutDiamond } from 'react-icons/gi';
-import SaasImage from '../../images/saas.jpg'
-import EcoImage from '../../images/ecommerce.png'
 import './solution.css'
 const Solution = () => {
 
@@ -33,10 +31,7 @@ const Solution = () => {
               <h1>Innovation</h1>
               <p>With an ongoing feedback from our existing customers along with evaluation business and technology trends, Nidus ERP is a continuously evolving product to ensure your business has access to latest technologies and practices to provide your business an edge over others.</p>
           </div>            
-          <div className='invation-img'>
-               <img src={SaasImage} alt=''/>
-              <img src={EcoImage} alt=''/>  
-          </div>
+          
                  
            
         </div>
